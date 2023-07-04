@@ -1,18 +1,25 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 
-import Navbar from "../components/Navbar";
-import devashy from "../../public/favicon.ico";
+// react icone
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/Ai";
 
-// Styled
+// images
+import devashy from "../../public/ai.png";
+
+//Pages
+import About from "./about";
+import Services from "./services";
+import Portofio from "./portofio";
+import Contact from "./contact";
+import Navbar from "../components/Navbar";
+
+// Style
 import styled from "styled-components";
 
 // Typewriter
 import Typewriter from "typewriter-effect";
-
-// react icone
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/Ai";
 
 export default function home() {
   return (
@@ -54,10 +61,10 @@ export default function home() {
             <a href="#">
               <FaTwitter />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/_devashy_06/">
               <AiFillInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/devashy-rangpariya/">
               <FaLinkedinIn />
             </a>
           </SocialMedia>
@@ -69,9 +76,14 @@ export default function home() {
         </HomeInfo>
 
         <HomeImg>
-          <img src="/devashy.png" alt="devashy" />
+          <img src="/ai.png" alt="devashy" />
         </HomeImg>
       </Section>
+
+      <About />
+      <Services />
+      {/* <Portofio/> */}
+      <Contact />
     </>
   );
 }
@@ -92,7 +104,6 @@ const Span = styled.span`
   display: flex;
   font-size: 28px;
   margin: 15px 0;
-  /* justify-content: ; */
   span {
     padding: 0 0 0 0.19rem;
     color: var(--skin-color);
@@ -103,6 +114,10 @@ const HomeImg = styled.div`
   max-width: 40%;
   text-align: center;
   position: relative;
+  img {
+    height: 700px;
+    width: 700px;
+  }
 `;
 const SocialMedia = styled.div`
   a {
@@ -117,7 +132,6 @@ const SocialMedia = styled.div`
     font-size: 2rem;
     color: var(--skin-color);
     margin: 3rem 1.5rem 3rem 0;
-    /* transition: .5s ; */
   }
   a:hover {
     background: var(--skin-color);
@@ -126,14 +140,13 @@ const SocialMedia = styled.div`
   }
 `;
 const P = styled.p`
-font-size: 20px;
+  font-size: 20px;
   color: var(--text-black-900);
 `;
 const H3 = styled.h3`
   font-size: 28px;
   margin: 15px 0;
   span {
-    /* padding: 0 0 0 2px; */
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
