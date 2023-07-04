@@ -28,7 +28,7 @@ export default function Services() {
             <ServicesItem>
               <ServicesItemInner>
                 <Icone>
-                  <FaMobileAlt  />
+                  <FaMobileAlt />
                 </Icone>
                 <H4>Web Design</H4>
                 <P>
@@ -109,37 +109,35 @@ export default function Services() {
   );
 }
 
-
 const P = styled.p`
-    font-size: 16px;
-    color: var(--text-black-700);
-    line-height: 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+  line-height: 25px;
 `;
 const H4 = styled.h4`
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--text-black-900);
+  font-weight: 700;
+  text-transform: capitalize;
 `;
 const Icone = styled.div`
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--skin-color);
-    transition: all 0.3s ease;
-    :hover{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--skin-color);
+  transition: all 0.3s ease;
+  :hover {
     background: var(--skin-color);
     font-size: 25px;
     color: #ffffff;
-    }
-    
+  }
 `;
 const ServicesItemInner = styled.div`
   background-color: var(--bg-black-100);
@@ -148,7 +146,7 @@ const ServicesItemInner = styled.div`
   padding: 30px 15px;
   text-align: center;
   transition: all 0.3s ease;
-  :hover{
+  :hover {
     box-shadow: 0 0 20px rgb(255 255 255 / 15%);
   }
 `;
