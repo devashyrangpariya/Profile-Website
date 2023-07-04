@@ -58,7 +58,7 @@ export default function home() {
             <a href="https://www.facebook.com/?react=AQB_qXzu7fQmv03WO9E">
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/R_Devashy">
               <FaTwitter />
             </a>
             <a href="https://www.instagram.com/_devashy_06/">
