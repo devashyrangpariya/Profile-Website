@@ -13,11 +13,11 @@ import {
 } from "react-icons/fa";
 import { FiCode } from "react-icons/fi";
 
-export default function services() {
+export default function Services() {
   return (
     <>
-      <Navbar />
-      <Section>
+      {/* <Navbar /> */}
+      <Section id="Services">
         <Container>
           <Row>
             <SectionTitle>

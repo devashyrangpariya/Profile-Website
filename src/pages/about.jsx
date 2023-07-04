@@ -10,9 +10,9 @@ import Typewriter from "typewriter-effect";
 export default function About() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <Section>
+      <Section id="About">
         <Container>
           <Row>
             <SectionTitle>
@@ -23,7 +23,7 @@ export default function About() {
             <AboutContent>
               <Row>
                 <AboutText>
-                  {/* <Span>
+                  <Span>
                     I`m Devashy Rangpariya
                     <span>
                       <Typewriter
@@ -42,10 +42,10 @@ export default function About() {
                         }}
                       />
                     </span>
-                  </Span> */}
-                  <H3>
+                  </Span>
+                  {/* <H3>
                     I`m Devashy Rangpariya <span>Frontend Developer</span>
-                  </H3>
+                  </H3> */}
 
                   <P>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

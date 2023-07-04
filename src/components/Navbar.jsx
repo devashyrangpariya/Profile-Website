@@ -18,30 +18,37 @@ export default function Navbar() {
           </Link>
         </Logo>
         <Nav>
-          <HomeLink href="/" colors={router?.pathname === "/" ? "#fa5b0f"  : "#fff"}>
+          <HomeLink
+            href="/"
+            colors={router?.pathname === "/" ? "#ec1839" : "#fff"}
+          >
             Home
           </HomeLink>
           <HomeLink
-            href="/about"
-            colors={router?.pathname === "/about" ? "#fa5b0f" : "#fff"}
+            href="#About"
+            // href="/About"
+            colors={router?.pathname === "/About" ? "#ec1839" : "#fff"}
           >
             About
           </HomeLink>
           <HomeLink
-            href="/services"
-            colors={router?.pathname === "/services" ? "#fa5b0f" : "#fff"}
+            href="#Services"
+            // href="/Services"
+            colors={router?.pathname === "/Services" ? "#ec1839" : "#fff"}
           >
             Services
           </HomeLink>
           {/* <HomeLink
-            href="/portofio"
-            colors={router?.pathname === "/portofio" ? "#fa5b0f" : "#fff"}
+            href="#Portofio"
+            href="/Portofio"
+            colors={router?.pathname === "/Portofio" ? "#ec1839" : "#fff"}
           >
             Portofio
           </HomeLink> */}
           <HomeLink
-            href="/contact"
-            colors={router?.pathname === "/contact" ? "#fa5b0f" : "#fff"}
+            href="#Contact"
+            // href="/Contact"
+            colors={router?.pathname === "/Contact" ? "#ec1839" : "#fff"}
           >
             Contact
           </HomeLink>
@@ -56,7 +63,6 @@ const Nav = styled.nav`
     font-size: 1.7rem;
     margin-left: 4rem;
     transition: 0.3s;
-    /* color: #000; */
   }
 `;
 const HomeLink = styled(Link)`
@@ -78,7 +84,6 @@ const Logo = styled.div`
   }
 `;
 const Header = styled.header`
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -88,5 +93,4 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  
 `;

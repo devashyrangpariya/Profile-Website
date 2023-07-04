@@ -13,6 +13,6 @@ export default function Home() {
 }
 
 const Home1 = styled.div`
-  background: #151515;
-  height: 100vh;
+  background-color: #151515;
+  /* height: 100vh; */
 `;

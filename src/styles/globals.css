@@ -8,6 +8,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+
   /* overflow: hidden; */
 }
 
@@ -26,8 +27,8 @@
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
   --text-black-700: #e9e9e9; 
-  /* --skin-color: #ec1839; */
-  --skin-color: #fa5b0f;
+  --skin-color: #ec1839;
+  /* --skin-color: #fa5b0f; */
 }
 
 body {
@@ -35,7 +36,8 @@ body {
   font-size: 16px;
   font-family: 'Poppins' scns-serif;
   background: var(--bg-color);
-  overflow: hidden;
+  background-color: #151515;
+  /* overflow: hidden; */
 }
 
 html {

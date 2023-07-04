@@ -4,16 +4,13 @@ import Navbar from "../components/Navbar";
 // Styled
 import styled from "styled-components";
 
-// react icone
-import { FaPhone, FaEnvelope, FaGlobeEurope } from "react-icons/fa";
-import { BiMap } from "react-icons/Bi";
 
-export default function contact() {
+export default function Contact() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <Section>
+      <Section id="Contact">
         <Container>
           <Row>
             <SectionTitle>

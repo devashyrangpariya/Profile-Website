@@ -4,12 +4,12 @@ import Navbar from "../components/Navbar";
 // Styled
 import styled from "styled-components";
 
-export default function portofio() {
+export default function Portofio() {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
 
-    <Section>
+    <Section id="Portofio">
         <Container>
           <Row>
             <SectionTitle>
