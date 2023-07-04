@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../components/Navbar";
 
 // Styled
 import styled from "styled-components";
 
-export default function portofio() {
+export default function Portofio() {
   return (
     <>
-    <Navbar />
+      {/* <Navbar /> */}
 
-    <Section>
+      <Section id="Portofio">
         <Container>
           <Row>
             <SectionTitle>
@@ -19,9 +19,8 @@ export default function portofio() {
         </Container>
       </Section>
     </>
-  )
+  );
 }
-
 
 const H2 = styled.h2`
   font-size: 40px;
@@ -74,5 +73,4 @@ const Section = styled.section`
   color: var(--text-black-900);
   background: var(--bg-black-900);
   height: 100vh;
-
 `;
